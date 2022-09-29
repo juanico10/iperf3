@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   iperf3:
-    image: networkstatic/iperf3:latest
+    image: juanico/iperf3:latest
     container_name: iperf3-server
     hostname: iperf3
     restart: always
