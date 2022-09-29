@@ -6,11 +6,11 @@ services:
     container_name: iperf3-server
     hostname: iperf3
     restart: always
-	  network_mode: "host"
+    network_mode: "host"
     security_opt:
       - no-new-privileges
-	  command: -s
-	  environment:
+    command: -s
+    environment:
       - PUID=1000
       - PGID=1000
     ports:
