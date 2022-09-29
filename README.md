@@ -11,11 +11,10 @@ Proyecto para crear un servidor iperf3 en Docker.
 <!-- markdownlint-enable MD033 -->
 
 ## Enlaces a desarrollador
-| PROYECTO | LINK DESARROLLADOR |
+| PROYECTO | LINK |
 | :-- | :--: |
-| Github |  [DESARROLLADOR](https://github.com/nerdalert/iperf3) |
-| Docker hub | [DESARROLLADOR](https://hub.docker.com/r/networkstatic/iperf3/) |
-| Web IPERF | [DESARROLLADOR](https://iperf.fr/) |
+| Docker hub | [Link](https://hub.docker.com/r/juanico/iperf3/) |
+| Web IPERF | [Link](https://iperf.fr/) |
 
 
 
