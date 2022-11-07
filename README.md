@@ -10,6 +10,10 @@ Proyecto para crear un servidor iperf3 en Docker.
 </p>
 <!-- markdownlint-enable MD033 -->
 
+[![GitHub](https://img.shields.io/static/v1.svg?color=blue&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=JuanRodenas&message=GitHub&logo=github)](https://github.com/JuanRodenas "view the source for all of our repositories.")
+![Docker Pulls](https://img.shields.io/docker/pulls/juanico/iperf3?logo=docker&style=for-the-badge)
+![Docker Image Version (latest by date)](https://img.shields.io/docker/v/juanico/iperf3?logo=docker&style=for-the-badge)
+
 ## Enlaces a desarrollador
 | PROYECTO | LINK |
 | :-- | :--: |
