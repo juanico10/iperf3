@@ -25,6 +25,14 @@ Proyecto para crear un servidor iperf3 en Docker.
 ## Archivos para la ejecución en docker
 Descargar docker compose [docker-compose.yml](https://github.com/JuanRodenas/iperf3/blob/main/docker-compose.yml)
 
+### Tag imagenes
+The architectures supported by this image are:
+
+| Architecture | Available | Tag |
+| :----: | :----: | ---- |
+| x86-64 | ✅ | stable |
+| arm | ✅ | :arm |
+
 ### Lanzar el contenedor
 ~~~
 docker-compose up -d
