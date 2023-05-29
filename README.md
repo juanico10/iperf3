@@ -30,7 +30,7 @@ The architectures supported by this image are:
 
 | Architecture | Available | Tag |
 | :----: | :----: | ---- |
-| x86-64 | ✅ | stable |
+| x86-64 | ✅ | :stable |
 | arm | ✅ | :arm |
 
 ### Lanzar el contenedor
