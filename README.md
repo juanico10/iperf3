@@ -120,16 +120,34 @@ Los siguientes argumentos se pueden introducir después de la ejecución del pro
 ```
 
 ## Ejemplo de un cliente
-A continuación, podéis ver un ejemplo, podemos ejecutar el cliente iperf3 con algunos argumentos muy interesantes:
+A continuación, podéis ver unos ejemploa, podemos ejecutar el cliente iperf3 con algunos argumentos muy interesantes:
 
-`iperf3.exe -c 192.168.1.10 -P 50 -p 5000 -f g -t 5`
-* Explicación de la línea:
+### Requisito previo — servidor
+
+En la máquina servidor debe estar corriendo:
+```bash
+iperf3 -s -p 5201
+```
+
+### Comandos de ejecución
+
+**Upload (cliente → servidor):**
+```bash
+iperf3 -c 192.168.1.10 -P 4 -p 5201 -f m -t 30
+```
+
+**Download (servidor → cliente):**
+```bash
+iperf3 -c 192.168.1.10 -P 4 -p 5201 -f m -t 30 -R
+```
+
 ~~~
--c 192.168.1.10: actúa en modo cliente con la IP definida.
--P 50: mandamos un total de 50 conexiones TCP
--p 5000: hacemos uso del puerto 5000, el por defecto es 5201
--f g: mostramos la velocidad en Gbps
--t 5: lanzamos el test durante 5 segundos.
+-c 192.168.1.10   → IP del servidor iperf3
+-P 4              → 4 flujos paralelos TCP (simula tráfico real multi-conexión)
+-p 5201           → puerto estándar iperf3
+-f m              → resultados en Mbits/sec (legible para enlaces típicos)
+-t 30             → 30 segundos (TCP alcanza estado estable y los resultados son fiables)
+-R                → reverse mode, el servidor envía al cliente (mide download)
 ~~~
 
 ## Conclusión
